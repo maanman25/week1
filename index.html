@@ -1,43 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Resume - Parbinder</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header id="main-header">
-        <h1 id="header-title">Parbinder's Professional Resume</h1>
-    </header>
+ // Week Two JavaScript Exercises
 
-    <main>
-        <section class="info-section">
-            <h2>About Me</h2>
-            <p>Hello! My name is Parbinder Singh, I am a full time teller/banker at CCB.</p>
-            <img src="/logo.png" alt="Professional Image">
-        </section>
+        // 1. Alert "Hi World!"
+        // 3. Adding "use strict" directive
+        "use strict";
+        alert("Hi World!");
 
-        <section class="info-section">
-            <h2>Experience</h2>
-            <p>Worked at walmart, worked in the OGP department.</p>
-        </section>
+        // 2. Console log a greeting with my name
+        console.log("Hi Parbinder Singh");
 
-        <section class="info-section">
-            <h2>Skills</h2>
-            <p>JavaScript, CSS, HTML, and various frameworks such as React and Node.js.</p>
-        </section>
-    </main>
+        // 4. Declaring variables myName and mySalary
+        const myName = "Parbinder Singh";
+        let mySalary = 100000;
+        console.log("My name is " + myName + " and my salary is " + mySalary);
 
-    <footer id="main-footer">
-        <p>Contact: psingh8@stumail.jccc.edu | Phone: (913) 747-5148</p>
-    </footer>
+        // 5. Reassign mySalary and log the new salary
+        mySalary = 150000;
+        console.log("My name is " + myName + " and my new salary is " + mySalary);
 
-    <script>
-        // JavaScript in the modern way
-        document.addEventListener('DOMContentLoaded', function() {
-            alert("Welcome to Parbinder's Resume Page!");
-        });
-    </script>
-</body>
-</html>
+        // 6. Declaring a Boolean variable to represent veteran status
+        let veteran = false;
+
+           // 7. Logging the data types of myName, mySalary, and veteran
+    console.log(typeof(myName)); // string
+    console.log(typeof(mySalary)); // number
+    console.log(typeof(veteran)); // boolean
+    
+    // 8. Logging type conversion expressions
+    console.log("" + 1 + 0);   // "10" (string concatenation)
+    console.log("" - 1 + 0);   // -1 (subtraction converts to number)
+    console.log(true + false); // 1 (true is 1, false is 0)
+    console.log(6 / "3");      // 2 (string "3" converts to number)
+    console.log("2" * "3");    // 6 (string "2" and "3" convert to numbers)
+    console.log(4 + 5 + "px"); // "9px" (4 + 5 adds to 9, then "px" concatenates)
+    console.log("$" + 4 + 5);  // "$45" (string concatenation)
+    console.log("4" - 2);      // 2 (string "4" converts to number)
+    console.log("4px" - 2);    // NaN ("4px" is not a number)
+    console.log(7 / 0);        // Infinity (division by zero)
+    console.log("  -9  " + 5); // "  -9  5" (string concatenation)
+    console.log("  -9  " - 5); // -14 (string converts to number)
+    console.log(null + 1);     // 1 (null converts to 0)
+    console.log(undefined + 1);// NaN (undefined is not a number)
+    
+    // 9. Understanding variable assignment in expressions
+    let x = 5; 
+    let y = 1 + (x *= 2); // x is assigned to 10 (5 * 2), then y is assigned to 11 (1 + 10)
+    console.log(x); // 10
+    console.log(y); // 11
